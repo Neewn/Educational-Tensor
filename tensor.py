@@ -567,18 +567,4 @@ class Tensor:
 
     def __str__(self) -> str:
         return self.__repr__()
-
-
-if __name__ == '__main__':
-    A = [[[i + j*3 + k*12 for i in range(3)] for j in range(4)] for k in range(5)]
-    B = Tensor([[4,5,6]])
-    C = Tensor([[1,2,3], [4,5,6]])
-    D = C // B
-    print(D)
-    print(D.tolist())
-    E = Tensor([[[10, 20, 30]]])
-    F = Tensor([[10], [20]])
-    G = E + F
-    print(E, F)
-    print(G)
-    print(G.tolist())
+        
